@@ -109,18 +109,10 @@ body {
 /*--------------- SEARCH FORM  ----------------*/
 .form-bg {
 	display: flex;
-	background-color: #1a1614;
-}
-.form-bg img {
-	display: block;
-	margin: 0 auto;
-}
-.form-bg-img {
-	display: flex;
-	background: url("../images/form-bg.png") no-repeat center;
-	width: 980px;
+	background: #1a1614 url("../images/form-bg.png") no-repeat center;
+	background-size: 100%;
+	width: auto;
 	height: 375px;
-	margin: 0 auto;
 }
 .form-search {
 	display: block;
@@ -462,7 +454,7 @@ body {
 	position: relative;
 	display: block;
 	width: 455px;
-	height: 270px;
+	height: 266px;
 	border-radius: 4px;
 	border-bottom: 1px solid #e2dee0;
 	background-color: #fff;
@@ -570,4 +562,278 @@ body {
 	display: flex;
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+.load-more {
+	display: block;
+	text-align: center;
+	padding: 10px 0  35px;
+	border-bottom: 1px solid #cccdd3;
+}
+.load-more a {
+	text-decoration: none;
+	border-bottom: 1px solid #cccdd3;
+	color: #566375;
+	font-size: 18px;
+}
+/*------------------ Content bottom ----------------------*/
+.content-bottom {
+	display: column;
+	flex-direction: row;
+	width: 820px;
+	margin: 0 auto;
+}
+.what-can {
+	display: block;
+	text-align: center;
+}
+.what-can h2 {
+	font-size: 22px;
+	margin: 0;
+	padding: 0;
+	color: #566375;
+	margin-top: 93px;
+}
+.what-can p {
+	padding: 0;
+	margin: 0;
+	color: #96a6a7;
+	font-size: 16px;
+	font-weight: normal;
+	margin-top: 12px;
+}
+.content-bottom .feature-block {
+	display: block;
+	margin-top: 70px;
+}
+.feature-block ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.feature-block li {
+	margin-right: 60px;
+}
+.feature-block li:last-child {
+	margin-right: 0;
+}
+.feature-block a {
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-color: transparent;
+	border: 2px solid #9dacad;
+	border-radius: 50%;
+	background-size: 60%;
+}
+.feature-block li:nth-child(1) a {
+	background: url("../images/home-big.png") no-repeat center;
+	border-color: #1db05e;
+}
+.feature-block li:nth-child(2) a {
+	background: url("../images/girl-big.png") no-repeat center;
+}
+.feature-block li:nth-child(3) a {
+	background: url("../images/study-big.png") no-repeat center;
+}
+.feature-block li:nth-child(4) a {
+	background: url("../images/music-big.png") no-repeat center;
+}
+.feature-block li:nth-child(5) a {
+	background: url("../images/bus-big.png") no-repeat center;
+}
+.reality {
+	display: block;
+	margin-bottom: 145px;
+}
+.reality h2 {
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	color: #1baf5d;
+}
+.reality .energy,
+.reality .leaf {
+	display: block;
+	width: 50%;
+	float: left;
+}
+.clearfix {
+	clear: both;
+}
+.reality .icon {
+	display: block;
+	min-width: 62px;
+	min-height: 62px;
+	width: 62px;
+	height: 62px;
+	background-color: #1baf5d;
+	border-radius: 50%;
+	margin: 0 30px;
+}
+.reality .energy .icon {
+	background: #1baf5d url("../images/energy.png") no-repeat center;
+}
+.reality .leaf .icon {
+	background: #1baf5d url("../images/leaf.png") no-repeat center;
+}
+.reality .energy,
+.reality .leaf {
+	display: flex;
+}
+.reality p {
+	margin-left: 122px;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	line-height: 24px;
+	color: #566375;
+	padding-right: 10px;
+}
+/*------------ FOOTER -----------------*/
+.footer-page {
+	display: block;
+	width: 100%;
+	height: 500px;
+	background: #1a1614 url("../images/footer-bg.png") no-repeat center;
+	background-size: 100%;
+}
+.footer-container {
+	display: block;
+	width: 980px;
+	min-height: 50px;
+	margin: 0 auto;
+	padding-top: 66px;
+}
+.subscribe-block {
+	text-align: center;
+	border-bottom: 1px solid #565452;
+	padding-bottom: 55px;
+}
+.subscribe-block h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 1;
+	color: #fff;
+	padding-bottom: 45px;
+}
+.text-submit-block {
+	position: relative;
+	display: inline-block;
+}
+.text-submit-block span {
+	position: absolute;
+	top: 23px;
+	left: 33px;
+	display: inline-block;
+	width: 18px;
+	height: 15px;
+	background: url("../images/letter.png") no-repeat center;
+}
+.subscribe-block input[type="text"] {
+	display: block;
+	width: 490px;
+	height: 60px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: rgba(255,255,255,0.1);
+	border: 1px solid #62696b;
+	border-radius: 30px;
+	box-sizing: border-box;
+	padding-left: 60px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: normal;
+}
+.subscribe-block input:focus {
+	outline: 0;
+	border: 1px solid lightblue;
+}
+.subscribe-block input::placeholder {
+	color: #fff;
+}
+.subscribe-block input:focus::placeholder {
+	color: #888;
+}
+.subscribe-block button {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	display: block;
+	width: 120px;
+	height: 50px;
+	padding: 0;
+	color: #fff;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #e94e38;
+	border: 0;
+	border-bottom: 2px solid #c1412e;
+	border-radius: 25px;
+	transition: 0.2s;
+}
+.subscribe-block button:hover {
+	background-color: #1db05e;
+	border-bottom-color: #1a9852;
+	color: #333;
+}
+/*-----------------------*/
+.footer-menu {
+	display: flex;
+}
+.footer-menu div {
+	width: 100%;
+	margin-top: 45px;
+}
+.footer-menu h3 {
+	display: inline;
+	color: #fff;
+	font-size: 16px;
+	font-weight: normal;
+	border-bottom: 2px solid #ccc;
+}
+.footer-menu ul {
+	list-style: none;
+	margin: 25px 0 0;
+	padding: 0;
+}
+.footer-menu a {
+	text-decoration: none;
+	color: #c0bebc;
+	font-size: 14px;
+	font-weight: normal;
+}
+.footer-menu .social-icons {
+	display: flex;
+	justify-content: space-between;
+	width: 162px;
+	margin-bottom: 42px;
+}
+.footer-menu .social-icons a {
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+.footer-menu .social-icons li:nth-child(1) a {
+	width: 15px;
+	background: url("../images/fb.png") no-repeat center;
+}
+.footer-menu .social-icons li:nth-child(2) a {
+	background: url("../images/t.png") no-repeat center;
+}
+.footer-menu .social-icons li:nth-child(3) a {
+	background: url("../images/g.png") no-repeat center;
+}
+.footer-menu .social-icons li:nth-child(4) a {
+	background: url("../images/yt.png") no-repeat center;
+}
+.footer-menu .copyright{
+	color: #fff;
+	font-size: 14px;
+	font-weight: normal;
 }
